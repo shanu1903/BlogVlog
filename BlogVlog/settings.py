@@ -132,4 +132,4 @@ LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = 'login'
 
 
-django_heroku.settings(local())
+django_heroku.settings(locals())
