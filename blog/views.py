@@ -34,7 +34,7 @@ def home(request):
 			content = form.cleaned_data.get('content')
 			author = request.user
 			p = posts(title = title , content = content , author = author)
-			p.save(force_insert = True)
+			p.save()
 			return redirect('home')
 
 	else:
